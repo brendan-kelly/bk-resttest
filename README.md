@@ -7,6 +7,9 @@ Make sure you are running python version `2.7.13`
 
 `python setup.py install`
 
+#### Getting all transactions
+`python resttest/cli.py transactions`
+
 #### Calculating total balance
 `python resttest/cli.py total_balance`
 
