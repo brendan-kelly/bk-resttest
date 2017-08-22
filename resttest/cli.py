@@ -1,13 +1,18 @@
+import json
 import sys
 
 from transactions import get_transactions
 from balances import get_total_balance, get_running_daily_balances
 from pprint import pprint
+from lib.byteify import json_loads_byteified
 
 
 if __name__ == '__main__':
     if sys.argv[1] == 'transactions':
-        pprint(get_transactions())
+        transactions = get_transactions()
+        # Used to print out JSON string without unicode u's
+        transactions_json = json.dumps(get_transactions())
+        pprint(json_loads_byteified(transactions_json))
 
     elif sys.argv[1] == 'total_balance':
         transactions = get_transactions()
