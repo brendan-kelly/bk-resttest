@@ -1,4 +1,6 @@
+__pycache__/
+*.py[cod]
 .cache
-.DS_Store
-.idea
 build
+.idea
+.DS_Store
