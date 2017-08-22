@@ -10,9 +10,9 @@ def test_get_total_balance():
 
 def test_get_running_daily_balances():
     expected_daily_running_balances = {
-        '2013-12-12': 30.0,
-        '2013-12-13': 20.0,
-        '2013-12-20': 0
+        '2013-12-12': 40.0,
+        '2013-12-13': 70.0,
+        '2013-12-20': 80.0
     }
     actual_daily_running_balances = get_running_daily_balances(transactions_list)
     assert expected_daily_running_balances == actual_daily_running_balances
